@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    background-color: #212529;
+    height: 900px;
+}
+.heading-type {
+    color: white;
+}
+
+.content {
+    padding: 100px;
+}
+
+#btnLink {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#audiobook {
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#audiobook2 {
+    margin-top: 50px;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
