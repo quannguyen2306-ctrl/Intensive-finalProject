@@ -5,7 +5,7 @@
 
 .heading {
     background-color: #212529;
-    height: 900px;
+    height: 862px;
 }
 .heading-type {
     color: white;
@@ -19,11 +19,17 @@
     border: none;
     border-radius: 8px;
     padding: 10px;
+    transition: 0.5s;
+}
+
+#btnLink:hover {
+    background-color: #00D2E7;
+    color: white;
 }
 
 #audiobook {
     margin-top: 100px;
-    width: 800px;
+    width: 700px;
     height: auto;
     border-radius: 15px;
 }
@@ -33,4 +39,16 @@
     width: 500px;
     height: auto;
     border-radius: 15px;
+}
+
+.navbar {
+    background-color: #212529;
+}
+
+.signIn {
+    margin-left: 100px;
+}
+
+.container-mid {
+    display: flex;
 }
