@@ -19,7 +19,7 @@
     border: none;
     border-radius: 8px;
     padding: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #btnLink:hover {
@@ -52,3 +52,7 @@
 .container-mid {
     display: flex;
 }
+
+
+
+

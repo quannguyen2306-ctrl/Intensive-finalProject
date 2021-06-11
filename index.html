@@ -12,14 +12,16 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="./assets/css/login_signUp.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Melodies in Tales</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -29,28 +31,27 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Thông tin</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              Thể loại
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Trẻ em</a></li>
+              <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
+              <li><a class="dropdown-item" href="#">Truyện hài</a></li>
+              <li><a class="dropdown-item" href="./cg.html">Văn học</a></li>
+              <li><a class="dropdown-item" href="#">Kinh dị</a></li>
+              <li><a class="dropdown-item" href="#">Trinh thám</a></li>
             </ul>
           </li>
-          <li class="nav-item" class="signIn">
-            <a class="nav-link" href="#">Features</a>
-          </li>
+          
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item mr-2">
@@ -63,27 +64,31 @@
                 <div class="modal-content">
                   <div class="container login-container">
                     <div class="row">
-                       
-                        <div class=" login-form-1">
-                            <h3>Đăng ký tài khoản</h3>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email của bạn *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Mật khẩu *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btnSubmit" value="Đăng nhập" />
-                                </div>
-                                <div class="form-group">
-        
-                                    <a href="#" class="ForgetPwd" value="Login">Đã có tài khoản? Đăng nhập ngay!</a>
-                                </div>
-                            </form>
-                        </div>
+
+                      <div class=" login-form-1">
+                        <h3>Đăng ký tài khoản</h3>
+                        <form>
+                          <div class="form-group">
+                            <input id="username" type="text" class="form-control" placeholder="Username *"  />
+                          </div>
+                          <div class="form-group">
+                            <input id="email" type="email" class="form-control" placeholder="Email của bạn *" />
+                          </div>
+                          <div class="form-group">
+                            <input id="password" type="password" class="form-control" placeholder="Mật khẩu *"  />
+                          </div>
+                          <div class="form-group">
+                            
+                            <button  id="signUpBtn" type="submit" class="btnSubmit" >Đăng kí</button>
+                          </div>
+                          <div class="form-group">
+
+                            <a href="#" class="ForgetPwd" value="Login">Đã có tài khoản? Đăng nhập ngay!</a>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,41 +100,41 @@
             </button>
             <div class="container login-container">
               <div class="row">
-                 
+
 
               </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="container login-container">
-                    <div class="row">
-                       
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="container login-container">
+                      <div class="row">
+
                         <div class=" login-form-2">
-                            <h3>Đăng nhập tài khoản</h3>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email của bạn *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Mật khẩu *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btnSubmit" value="Đăng nhập" />
-                                </div>
-                                <div class="form-group">
-        
-                                    <a href="#" class="ForgetPwd" value="Login">Chưa có tài khoản? Hãy đăng ký ngay!</a>
-                                </div>
-                            </form>
+                          <h3>Đăng nhập tài khoản</h3>
+                          <form>
+                            <div class="form-group">
+                              <input id="userEmail" type="text" class="form-control" placeholder="Email của bạn *" value="" />
+                            </div>
+                            <div class="form-group">
+                              <input id="userPassword" type="password" class="form-control" placeholder="Mật khẩu *" value="" />
+                            </div>
+                            <div class="form-group">
+                              <button id="login" type="submit" class="btnSubmit">Đăng nhập</button>
+                            </div>
+                            <div class="form-group">
+
+                              <a href="#" class="ForgetPwd" value="Login">Chưa có tài khoản? Hãy đăng ký ngay!</a>
+                            </div>
+                          </form>
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
           </li>
 
@@ -155,6 +160,40 @@
       </div>
     </div>
   </div>
+<br>
+  <section class="article-list">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Melodies in Tales</h2>
+        <p class="text-center">Một nền tảng sách nói giúp những người khiếm thị được tiếp cận đến sách dễ dàng hơn dành cho mọi lứa tuổi</p>
+      </div>
+      
+       <div class="content d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.hollows.org/Upload/FHF/Media/au/Images/1-4m-blind-children.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5>Trẻ em khiếm thị</h5>
+            <p class="card-text">Có 1,4 triệu trẻ em mù trên thế giới. Một triệu trẻ em trong số này sống ở châu Á và 300.000 trẻ sống ở châu Phi.</p>
+          </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+  </section>
 
 
 
@@ -167,10 +206,16 @@
   <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
   <script src="./assets/js/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+  <script src="./assets/js/signup.js"></script>
+  <script src="./assets/js/logIn.js"></script>
+  
 </body>
 
 </html>
