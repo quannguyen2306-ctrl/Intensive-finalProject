@@ -54,5 +54,16 @@
 }
 
 
+#readBook {
+    width: 500px;
+    height: 380px;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: red;
+}
+
+#readBook:hover {
+    background-color: #ffcccb
+}
 
 

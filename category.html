@@ -28,18 +28,16 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Thông tin</a>
+            <a class="nav-link active btn-voice" data-id="trangchu_btn" aria-current="page" href="./index.html">Trang chủ</a>
           </li>
           
+          
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle btn-voice" data-id="theloai_btn" data-value="Thể loại" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Thể loại
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="categoryNavBar">
               <li><a class="dropdown-item" href="./cg.html">Trẻ em</a></li>
               <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
               <li><a class="dropdown-item" href="#">Truyện hài</a></li>
@@ -52,7 +50,18 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item mr-2">
-            <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal-login">
+            <button type="button" id="nameBtn" class="btn btn-outline-light">
+             
+            </button>  
+          </li>
+          <li class="nav-item mr-2">
+            <button type="button btn-light" id="logoutBtn" class="btn btn-outline-light">
+                Đăng xuất
+            </button>
+            
+          </li>
+          <li class="nav-item mr-2">
+            <button type="button" class="btn btn-outline-light btn-voice" id="loginBtn" data-id="signup_btn" data-value="Đăng ký" data-toggle="modal" data-target="#modal-login">
               Đăng ký
             </button>
             <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -64,7 +73,7 @@
 
                       <div class=" login-form-1">
                         <h3>Đăng ký tài khoản</h3>
-                        <form>
+    
                           <div class="form-group">
                             <input id="username" type="text" class="form-control" placeholder="Username *"  />
                           </div>
@@ -76,13 +85,13 @@
                           </div>
                           <div class="form-group">
                             
-                            <button  id="signUpBtn" type="submit" class="btnSubmit" >Đăng kí</button>
+                            <button  id="signUpBtn"  class="btnSubmit" >Đăng kí</button>
                           </div>
                           <div class="form-group">
 
                             <a href="#" class="ForgetPwd" value="Login">Đã có tài khoản? Đăng nhập ngay!</a>
                           </div>
-                        </form>
+                 
                       </div>
                     </div>
                   </div>
@@ -92,7 +101,7 @@
           </li>
           <li class="nav-item">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-light  btn-voice" id="signupBtn" data-id="login_btn" data-value="Đăng nhập"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               Đăng nhập
             </button>
             <div class="container login-container">
@@ -111,7 +120,7 @@
 
                         <div class=" login-form-2">
                           <h3>Đăng nhập tài khoản</h3>
-                          <form>
+                         
                             <div class="form-group">
                               <input id="userEmail" type="text" class="form-control" placeholder="Email của bạn *" value="" />
                             </div>
@@ -119,13 +128,13 @@
                               <input id="userPassword" type="password" class="form-control" placeholder="Mật khẩu *" value="" />
                             </div>
                             <div class="form-group">
-                              <button id="login" type="submit" class="btnSubmit">Đăng nhập</button>
+                              <button id="login"  class="btnSubmit">Đăng nhập</button>
                             </div>
                             <div class="form-group">
 
                               <a href="#" class="ForgetPwd" value="Login">Chưa có tài khoản? Hãy đăng ký ngay!</a>
                             </div>
-                          </form>
+                          
                         </div>
                       </div>
                     </div>
@@ -142,16 +151,7 @@
 
 
   <div id="books" class="container container-mid d-flex flex-wrap justify-content-evenly"">
-    <div class="card mt-5" style="width: 15rem;">
-      <div class="ratio" style="--bs-aspect-ratio: 150%;">
-        <img src="https://photo-cms-sggp.zadn.vn/w570/Uploaded/2021/duwsxrdrky/2017_05_07/harry_1_biamoi_2017_small61141652pm_1_yhrp.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Harry Potter: Hòn đá phù thủy</h5>
-        <p class="card-text">JK.Rowling</p>
-        <a href="#" class="btn btn-primary">Nghe sách</a>
-      </div>
-    </div>
+    
     
     
     
@@ -171,7 +171,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+    <script src="./assets/js/auth.js"></script>
+   <script src="./assets/js/signup.js"></script>
+   <script src="./assets/js/logIn.js"></script>
     <script src="./assets/js/book.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/voice.js"></script>
 </body>
 
 </html>

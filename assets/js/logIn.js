@@ -1,10 +1,9 @@
-
-let userEmail = document.getElementById("userEmail").value;
-let userPassword = document.getElementById("userPassword").value;
 let loginBtn = document.getElementById("login")
 
 function login() {
-
+    
+    let userEmail = document.getElementById("userEmail").value;
+    let userPassword = document.getElementById("userPassword").value;
     firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
         .then((userCredential) => {
             // Signed in
@@ -22,5 +21,5 @@ function login() {
 
     }
 
-loginBtn.addEventListener("click", login())
+loginBtn.addEventListener("click", login)
 
